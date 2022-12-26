@@ -8,7 +8,7 @@ export default function Header() {
         <Link href="/">
           <Image
             className="rounded-full"
-            src="/../public/pav.jpg"
+            src="/pav.jpg"
             width={50}
             height={50}
             alt="logo"

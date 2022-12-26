@@ -1,7 +1,7 @@
 import { Image, Reference, Slug } from 'sanity';
 
 type Base = {
-  _createAt: string;
+  _createdAt: string;
   _id: string;
   _rev: string;
   _trype: string;
