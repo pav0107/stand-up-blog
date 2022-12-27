@@ -27,13 +27,13 @@ export default function BlogList({ posts }: Props) {
                 <div className="absolute bottom-0 flex justify-between w-full p-5 text-white bg-black rounded bg-opacity-20 backdrop-blur-lg drop-shadow-lg">
                   <div>
                     <p className="font-bold">{post.title}</p>
-                    <p>
+                    {/* <p>
                       {new Date(post._createdAt).toLocaleDateString('en-US', {
                         day: 'numeric',
                         month: 'long',
                         year: 'numeric',
                       })}
-                    </p>
+                    </p> */}
                   </div>
 
                   <div className="flex flex-col items-center md:flex-row gap-y-2 md:gap-x-2">
