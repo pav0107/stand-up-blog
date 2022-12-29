@@ -39,33 +39,13 @@ async function Post({ params: { slug } }: Props) {
             <div className="flex flex-col justify-between md:flex-row gap-y-5">
               <div>
                 <h1 className="text-4xl font-extrabold">{post.title}</h1>
-                {/* <p>
-                  {new Date(post._createdAt).toLocaleDateString('en-US', {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric',
-                  })}
-                </p> */}
               </div>
-              {/* <div className="flex items-center space-x-2">
-                <Image
-                  className="rounded-full"
-                  src={urlFor(post.author.image).url()}
-                  alt={post.author.name}
-                  height={40}
-                  width={40}
-                />
-
-                <div className="w-64">
-                  <h3 className="text-lg font-bold">{post.author.name}</h3>
-                </div>
-              </div> */}
             </div>
 
             <div>
               <h2 className="pt-10 italic">{post.description}</h2>
               <div className="flex items-center justify-end mt-auto space-x-2">
-                {post.categories.map((category) => (
+                {post.categories.map((category: any) => (
                   <p
                     key={category._id}
                     className="px-3 py-1 mt-4 text-sm font-semibold text-white bg-gray-600 rounded-full"
