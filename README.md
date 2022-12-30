@@ -1,27 +1,17 @@
-# Next.js + Tailwind CSS Example
+# Adventures in Stand-Up
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+I've built this site as a blog-type site to host some of my thoughts on my stand-up experiences. I built it with Next.js 13, Sanity v3 (a CMS which uses the GROQ query language), TypeScript and Tailwind CSS.
 
-## Deploy your own
+This meant that I was able to put together the content including images and links in Sanity's CMS, and then output that through Next.js.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+# Next.js 13
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Instead of a pages folder, I've got an app folder. Inside this I'm using route grouping to separate out my files into users and admin folders, without altering the route.
 
-## How to use
+# Sanity.io
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+A CMS, which allows me to control who is authenticated to post: in this case, just me at the moment. It's currently just for some of my memories of doing stand-up, but I may make it broader in the future, which may include other people posting on it.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+# Dependencies
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+[next-sanity](https://www.npmjs.com/package/next-sanity): a sanity.io toolkit for Next.js
