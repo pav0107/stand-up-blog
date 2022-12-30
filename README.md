@@ -1,6 +1,6 @@
 # Adventures in Stand-Up
 
-I've built this site as a blog-type site to host some of my thoughts on my stand-up experiences. I built it with Next.js 13, Sanity v3 (a CMS which uses the GROQ query language), TypeScript and Tailwind CSS.
+I've built [this site](https://stand-up-blog.vercel.app/) as a blog-type site to host some of my thoughts on my stand-up experiences. I built it with Next.js 13, Sanity v3 (a CMS which uses the GROQ query language), TypeScript and Tailwind CSS.
 
 This meant that I was able to put together the content including images and links in Sanity's CMS, and then output that through Next.js.
 
